@@ -9,3 +9,12 @@ source .venv/Scripts/activate
 django-admin startproject config .
 
 pip install django djangorestframework                       `'rest_framework'`(add in installed apps)
+
+
+
+
+Regular-
+
+git add .
+git commit -m "ready"
+git push
