@@ -26,16 +26,11 @@ SECRET_KEY = 'django-insecure-_2tr0zr=hisxl$s$)75+av$h%aobwe%m)sfuol#s90=8oaxnl(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    ".vercel.app",
-    "localhost",
-    "127.0.0.1",
-    *[
-        host.strip()
-        for host in os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(",")
-        if host.strip()
-    ],
-]
+ALLOWED_HOSTS = [".vercel.app","localhost","127.0.0.1"]
+
+REST_FRAMEWORK = {'DEFAULT_RENDERER_CLASSES':['rest_framework.renderers.JSONRenderer',]}
+   
+
 
 
 # Application definition
